@@ -71,7 +71,7 @@ def _get_dspy_cache():
         )
     return _dspy_cache
 
-DSPY_CACHE = _get_dspy_cache()
+DSPY_CACHE = None # _get_dspy_cache()
 
 if "LITELLM_LOCAL_MODEL_COST_MAP" not in os.environ:
     # Accessed at run time by litellm; i.e., fine to keep after import
